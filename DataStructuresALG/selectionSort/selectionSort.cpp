@@ -2,10 +2,54 @@
 //
 
 #include <iostream>
+#include <algorithm>
+
+void seleSort(int arr[], const int& n)
+{	
+	int* el = nullptr;
+	int temp{ 0 };
+	int* location= nullptr;
+	for (int i = { 0 }; i < n; i++)
+	{	
+		el = std::min_element(arr+i,arr+n);
+		temp = arr[i];
+		arr[i] = *el;
+		*el = temp;
+
+
+	}
+}
+
+void showArray(int arr[], const int& n)
+{
+	std::cout << "Array elments: ";
+	for (int i{ 0 }; i < n; i++)
+	{
+		std::cout << arr[i] << " ";
+	}
+
+	std::cout << std::endl;
+
+}
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	int n;
+	std::cout << "Enter the number of elements: ";
+	std::cin >> n;
+	std::cout << "Enter array numbers: \n";
+	int* arr = new int[n];
+	for (int i = 0; i < n; i++)
+	{
+		std::cout << i << ":";
+		std::cin >> arr[i];
+
+	}
+	showArray(arr, n);
+	seleSort(arr, n);
+	showArray(arr, n);
+
+	delete[] arr;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
