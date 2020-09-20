@@ -1,11 +1,60 @@
 // insertionSort.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
 
 #include <iostream>
 
+void inSort(int arr[], const int& n)
+{
+	int temp{ 0 };
+	int j{ 0 };
+	for (int i{ 1 }; i < n; i++)
+	{	
+		temp = arr[i];
+		j = i - 1;
+
+		while (j >= 0 && arr[j] > temp)
+		{
+			arr[j + 1] = arr[j];
+			j--;
+		}
+
+		arr[j+1] = temp;
+
+	}
+
+
+}
+
+void showArray(int arr[], const int& n)
+{
+	std::cout << "Array elments: ";
+	for (int i{ 0 }; i < n; i++)
+	{
+		std::cout << arr[i] << " ";
+	}
+
+	std::cout << std::endl;
+
+}
+
+
 int main()
 {
-    std::cout << "Hello World!\n";
+	int n;
+	std::cout << "Enter the number of elements: ";
+	std::cin >> n;
+	std::cout << "Enter array numbers: \n";
+	int* arr = new int[n];
+	for (int i = 0; i < n; i++)
+	{
+		std::cout << i << ":";
+		std::cin >> arr[i];
+
+	}
+	showArray(arr, n);
+	inSort(arr, n);
+	showArray(arr, n);
+
+	delete[] arr;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
