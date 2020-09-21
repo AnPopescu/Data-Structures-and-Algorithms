@@ -5,24 +5,25 @@
 
 
 #include <iostream>
+#include "LList.h"
 
 int main()
 {
-	int* i = new int(10);
-	int* j = new int(20);
-	int* t = new int(30);
-	*i = 12;
-	std::cout << *i;
-	t = i;
-	i = j;
-	j = t;
 	
-	delete t;
-
 	
-	std::cout << *i;
+	DS::LList firstList;
+	firstList.push(10);
+	firstList.display();
+	firstList.push(20);
+	firstList.push(40);
+	firstList.push(80);
+	firstList.push(100);
+	firstList.display();
+	std::cout << firstList.size;
+	
+	std::cout << " \n";
+	std::cout << "That's ALL folks!!\n";
+	
 
-	delete j;
-	delete t;
 }
 

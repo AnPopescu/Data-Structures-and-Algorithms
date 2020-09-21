@@ -1,0 +1,6 @@
+﻿  HavocRoom.cpp
+HavocRoom.obj : error LNK2019: unresolved external symbol "public: __thiscall DS::LList::LList(void)" (??0LList@DS@@QAE@XZ) referenced in function _main
+HavocRoom.obj : error LNK2019: unresolved external symbol "public: __thiscall DS::LList::~LList(void)" (??1LList@DS@@QAE@XZ) referenced in function _main
+HavocRoom.obj : error LNK2019: unresolved external symbol "public: void __thiscall DS::LList::push(int)" (?push@LList@DS@@QAEXH@Z) referenced in function _main
+HavocRoom.obj : error LNK2019: unresolved external symbol "public: void __thiscall DS::LList::display(void)" (?display@LList@DS@@QAEXXZ) referenced in function _main
+P:\PROJECTS\dataAndAlgorithms\DataStructuresALG\Debug\HavocRoom.exe : fatal error LNK1120: 4 unresolved externals

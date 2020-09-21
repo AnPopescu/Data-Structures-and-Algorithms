@@ -9,6 +9,7 @@ namespace DS
 		NODE* next;
 
 		NODE() :data(0), next(nullptr){}
+		NODE(int n) :data(n), next(nullptr) {}
 
 	};
 
@@ -19,13 +20,13 @@ namespace DS
 	public:
 		NODE* head;
 		NODE* tail;
+		int size;
 		LList();
 		~LList();
 
-		void push(int n)
-		{
-			if(head)
-		}
+		void push(int n);
+		void display();
+		
 
 		
 	};
