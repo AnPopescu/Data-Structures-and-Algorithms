@@ -16,7 +16,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DS_Lib", "DS_Lib\DS_Lib.vcx
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HavocRoom", "HavocRoom\HavocRoom.vcxproj", "{203EBBDF-9A18-4244-BDA0-FD5156273B36}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "testLIb", "testLIb\testLIb.vcxproj", "{BFABD44A-95D0-415C-9951-3952FC6ECAB2}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{900303F5-F8C6-45C2-AFFF-2D8DE65D8DC8}"
+	ProjectSection(SolutionItems) = preProject
+		ThingsToDo.txt = ThingsToDo.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -66,14 +69,6 @@ Global
 		{203EBBDF-9A18-4244-BDA0-FD5156273B36}.Release|x64.Build.0 = Release|x64
 		{203EBBDF-9A18-4244-BDA0-FD5156273B36}.Release|x86.ActiveCfg = Release|Win32
 		{203EBBDF-9A18-4244-BDA0-FD5156273B36}.Release|x86.Build.0 = Release|Win32
-		{BFABD44A-95D0-415C-9951-3952FC6ECAB2}.Debug|x64.ActiveCfg = Debug|x64
-		{BFABD44A-95D0-415C-9951-3952FC6ECAB2}.Debug|x64.Build.0 = Debug|x64
-		{BFABD44A-95D0-415C-9951-3952FC6ECAB2}.Debug|x86.ActiveCfg = Debug|Win32
-		{BFABD44A-95D0-415C-9951-3952FC6ECAB2}.Debug|x86.Build.0 = Debug|Win32
-		{BFABD44A-95D0-415C-9951-3952FC6ECAB2}.Release|x64.ActiveCfg = Release|x64
-		{BFABD44A-95D0-415C-9951-3952FC6ECAB2}.Release|x64.Build.0 = Release|x64
-		{BFABD44A-95D0-415C-9951-3952FC6ECAB2}.Release|x86.ActiveCfg = Release|Win32
-		{BFABD44A-95D0-415C-9951-3952FC6ECAB2}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

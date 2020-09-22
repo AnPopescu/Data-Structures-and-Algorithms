@@ -6,12 +6,13 @@
 
 #include <iostream>
 #include "LList.h"
+#include "Queue.h"
 
 int main()
 {
 	
-	
-	DS::LList firstList;
+	//LList
+	/*DS::LList firstList;
 	firstList.push(10);
 	firstList.display();
 	firstList.push(20);
@@ -22,7 +23,30 @@ int main()
 	std::cout << firstList.size;
 	
 	std::cout << " \n";
-	std::cout << "That's ALL folks!!\n";
+	std::cout << "That's ALL folks!!\n";*/
+	
+	//Queue
+	DS::Queue qu;
+	qu.display();
+	qu.push(10);
+	qu.display();
+	std::cout << "Queue size: " << qu.size <<std::endl;
+	int i = qu.pop();
+	qu.display();
+	std::cout << "Queue size: " << qu.size << std::endl;
+	qu.push(20);
+	qu.push(30);
+	qu.push(140);
+	qu.push(155);
+	qu.push(44);
+	qu.display();
+	int j = qu.pop();
+	int k = qu.pop();
+
+	std::cout << "Elements popped in order: " << i << " " << j << " " << k << std::endl;
+
+	std::cout << "That's all folks. \n";
+
 	
 
 }
