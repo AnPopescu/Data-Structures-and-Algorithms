@@ -1,0 +1,5 @@
+	= Reorganise the DS_lib (maybe pch)
+	= Encapsulate
+	= Teamplate LList and Queue ? so it can include strings/chars and other
+	= Make use of smart pointers
+
