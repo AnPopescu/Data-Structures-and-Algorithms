@@ -38,6 +38,7 @@ int main()
 	qu.push(30);
 	qu.push(140);
 	qu.push(155);
+	qu.push(55);
 	qu.push(44);
 	qu.display();
 	int j = qu.pop();
